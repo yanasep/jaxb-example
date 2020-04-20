@@ -19,6 +19,8 @@ public class Main {
         movie.setVotes(587180);
         movie.setGenres(List.of("animation", "adventure", "comedy"));
         movie.setUrl(new URL("https://www.imdb.com/title/tt0126029/"));
+        JAXBHelper.toXML(movie, System.out);
+        JAXBHelper.toXML(movie, new FileOutputStream("shrek.xml"));
     }
 
 }

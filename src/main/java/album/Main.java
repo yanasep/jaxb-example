@@ -22,6 +22,9 @@ public class Main {
         tracks.add(new Track("Way Out of Here", 457));
         tracks.add(new Track("Sleep Together", 448));
         album.setTracks(tracks);
+
+//        System.out.println(album);
+        JAXBHelper.toXML(album, System.out);
     }
 
 }
